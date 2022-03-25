@@ -70,7 +70,7 @@ $(window).load(function () {
   //
   axios.get("../permissions").then( (response) => {
     let permissions = response.data
-    let app = require("./Application")
+    let app = require("./Application").default
     app.init(permissions)
     $(".loader").fadeOut(500, function () {
       $(this).remove();

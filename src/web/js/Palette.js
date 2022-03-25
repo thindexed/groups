@@ -1,7 +1,7 @@
-import Hogan from "hogan.js";
-import inputPrompt from "../common/js/InputPrompt";
+import Hogan from "hogan.js"
+import inputPrompt from "../common/js/InputPrompt"
 
-let recordStore = require("./Records")
+import recordStore from "./Records"
 
 export default class Palette {
 

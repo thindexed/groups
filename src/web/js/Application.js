@@ -1,9 +1,9 @@
 import AppSwitch from "../common/js/AppSwitch"
 import Userinfo from "../common/js/Userinfo"
 
-let Palette = require("./Palette")
-let View = require("./View")
-let Toolbar = require("./Toolbar")
+import Palette from "./Palette"
+import View from "./View"
+import Toolbar from "./Toolbar"
 
 import conf from "./Configuration"
 

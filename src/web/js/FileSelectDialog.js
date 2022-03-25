@@ -1,5 +1,5 @@
 import Hogan from "hogan.js"
-import fs from "path"
+let { dirname } = require("./path.js").default
 
 import conf from "./Configuration"
 
@@ -86,7 +86,7 @@ class Dialog {
     $("#fileSelectDialog .nav-tabs").append(`<li><a data-toggle="tab" href="${paneSelector}">${paneId}</a></li>`)
     $("#fileSelectDialog .file-select-content").append(`<div id="${paneId}" class="tab-pane fade"></div>`)
 
-    let storage = require("./BackendStorage")
+    let storage = require("./BackendStorage").default
 
     let _this = this
     // load files
@@ -104,7 +104,7 @@ class Dialog {
 
         if (path.length !== 0) {
           files.unshift({
-            name: fs.dirname(path),
+            name: dirname(path),
             folder: "", // important. Otherwise Hogan makes a lookup fallback to the root element
             type: "dir",
             dir: true,

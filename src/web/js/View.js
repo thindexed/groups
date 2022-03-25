@@ -2,7 +2,7 @@ import textPrompt from "../common/js/TextPrompt"
 import fileSelectDialog from "./FileSelectDialog"
 import axios from "axios"
 
-let recordStore = require("./Records")
+let recordStore = require("./Records").default
 
 import Hogan from "hogan.js";
 
@@ -85,7 +85,6 @@ export default class View {
     let tmpl = $("#welcomeTemplate").html()
     $("#editor .content").html(tmpl)
   }
-
 
   generateEMailInvitation(group){
     let currentUrl = window.location.href.split('?')[0]
