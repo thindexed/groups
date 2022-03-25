@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: groups
-        image: docker.io/freegroup/thindexed-author:0.1.0-30
+        image: docker.io/freegroup/thindexed-groups:0.1.0-1
